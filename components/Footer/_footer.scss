@@ -1,0 +1,31 @@
+.footer {
+    background-color: $color-primary;
+    color: $color-bg-primary;
+    &__up {
+        display: flex;
+        gap: 4rem;
+        flex-wrap: wrap;
+    }
+
+    &__description {
+        max-width: 32rem;
+    }
+}
+
+.footer__up {
+    h3,
+    h4 {
+        margin-bottom: 1rem;
+    }
+}
+
+.footer__middle {
+    margin: 2rem 0;
+    display: flex;
+    gap: 4rem;
+}
+
+.footer__down {
+    display: flex;
+    gap: 4rem;
+}

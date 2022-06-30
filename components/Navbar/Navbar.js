@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Logo from "../Reusables/Logo/Logo";
 
 const Navbar = () => {
     const router = useRouter();
@@ -15,9 +16,7 @@ const Navbar = () => {
         <header>
             <div className="container">
                 <nav className="navbar">
-                    <a href="/" className="navbar__logo">
-                        <h3>YASHCAN</h3>
-                    </a>
+                    <Logo />
                     <ul style={{ display: isMenuVisible ? "flex" : "none" }}>
                         <li
                             className={`navbar__link ${

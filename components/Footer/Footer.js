@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "../Reusables/Logo/Logo";
 
 const Footer = () => {
     return (
@@ -7,9 +8,9 @@ const Footer = () => {
                 <div className="wrapper">
                     <div className="footer__up">
                         <div className="footer__description">
-                            <a href="/" className="navbar__logo">
-                                <h3>YASHCAN</h3>
-                            </a>
+                            <Link href="/">
+                                <Logo inverted />
+                            </Link>
                             <p>
                                 YashCan Incorporated is carving a niche as a
                                 prominent Importer, Exporter and Trader to
@@ -62,12 +63,6 @@ const Footer = () => {
                     </div>
                     <div className="footer__down">
                         <h4>2021 &#169; YashCan</h4>
-                        {/* <h5>
-                            Made with &hearts; by{" "}
-                            <a href="www.prashaant.in" target="_blank">
-                                Prashant
-                            </a>
-                        </h5> */}
                     </div>
                 </div>
             </div>

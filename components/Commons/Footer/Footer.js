@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "../Reusables/Logo/Logo";
+import Logo from "../../Reusables/Logo/Logo";
 
 const Footer = () => {
     return (

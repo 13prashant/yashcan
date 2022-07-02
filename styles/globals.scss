@@ -2,14 +2,19 @@
 
 @import "./variables";
 
-@import "../components/Navbar/navbar";
-@import "../components/Footer/footer";
+@import "../components/Commons/Navbar/navbar";
+@import "../components/Commons/Footer/footer";
+
+@import "../components/Home/Main/main";
+@import "../components/Home/Ceo/ceo";
+@import "../components/Home/OurThings/ourThings";
 
 html,
 body {
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
+    font-size: 14px;
 }
 
 a {
@@ -19,6 +24,10 @@ a {
 
 * {
     box-sizing: border-box;
+}
+
+img {
+    width: 100%;
 }
 
 ul {
@@ -33,15 +42,19 @@ h3,
 h4,
 h5,
 h6,
-p,
 a {
     margin: 0;
 }
 
 p {
-    margin-top: 1rem;
-    color: $color-bg-secondary;
-    font-weight: 100;
+    color: $color-text-light;
+}
+
+.s1 {
+    background-color: $color-bg-primary;
+}
+.s2 {
+    background-color: $color-bg-secondary;
 }
 
 .container {
@@ -50,7 +63,17 @@ p {
     padding: 6.25rem 2rem;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+    gap: 2rem;
+}
+
 @media screen and (min-width: 540px) {
+    body {
+        font-size: 16px;
+    }
     .container {
         max-width: 1400px;
         margin: 0 auto;

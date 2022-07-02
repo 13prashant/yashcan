@@ -9,6 +9,10 @@
 
     &__description {
         max-width: 32rem;
+        p {
+            font-weight: 300;
+            color: $color-bg-secondary;
+        }
     }
 }
 

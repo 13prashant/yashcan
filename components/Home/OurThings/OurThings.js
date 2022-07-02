@@ -1,10 +1,12 @@
 const OurThings = () => {
     return (
-        <div className="main s2">
+        <div className="main s1">
             <div className="container">
                 <div className="ourThings__wrapper wrapper grid">
                     <div className="ourThings__left">
-                        <h4>Our Mission, Vision & Values​</h4>
+                        <h4 className="heading">
+                            Our Mission, Vision & Values​
+                        </h4>
                         <h3>
                             Helping & providing the best services to our client
                             businesses.
@@ -24,7 +26,7 @@ const OurThings = () => {
                         <img src="/images/map.png" alt="" />
                     </div>
                     <div className="ourThings__right">
-                        <div className="ourThings__card">
+                        <div className="ourThings__card card">
                             <img src="/images/mission.svg" alt="" />
                             <div className="ourThings__content">
                                 <h4>Mission</h4>
@@ -36,7 +38,7 @@ const OurThings = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="ourThings__card">
+                        <div className="ourThings__card card">
                             <img src="/images/vision.svg" alt="" />
                             <div className="ourThings__content">
                                 <h4>Vision</h4>
@@ -51,7 +53,7 @@ const OurThings = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="ourThings__card">
+                        <div className="ourThings__card card">
                             <img src="/images/values.svg" alt="" />
                             <div className="ourThings__content">
                                 <h4>Values</h4>

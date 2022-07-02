@@ -1,0 +1,16 @@
+.contactDetails__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contactDetails__card {
+    background-color: $color-bg-primary !important;
+    max-width: 600px;
+    flex-direction: row !important;
+    img {
+        margin-right: 3rem !important;
+    }
+    h5 {
+        margin-top: 1rem;
+    }
+}

@@ -1,5 +1,13 @@
+import ContactDetails from "../components/ContactUs/ContactDetails/ContactDetails";
+import GoogleMap from "../components/ContactUs/GoogleMap/GoogleMap";
+
 const ContactUs = () => {
-    return <div>ContactUs</div>;
+    return (
+        <>
+            <ContactDetails />
+            <GoogleMap />
+        </>
+    );
 };
 
 export default ContactUs;

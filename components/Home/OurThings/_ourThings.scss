@@ -1,12 +1,3 @@
-.ourThings__left {
-    h4 {
-        color: $color-text-light;
-        letter-spacing: 2px;
-        margin-bottom: 1rem;
-        text-transform: uppercase;
-    }
-}
-
 .ourThings__right {
     display: flex;
     flex-direction: column;
@@ -14,23 +5,9 @@
 }
 
 .ourThings__card {
-    display: flex;
-    gap: 1rem;
-    background-color: $color-bg-primary;
-    padding: 2rem;
     img {
         display: none;
     }
-    h4 {
-        color: $color-text-light;
-    }
-    p {
-        font-size: 0.9rem;
-    }
-}
-
-.ourThings__card:nth-child(2n) {
-    flex-direction: row-reverse;
 }
 
 @media screen and (min-width: 900px) {

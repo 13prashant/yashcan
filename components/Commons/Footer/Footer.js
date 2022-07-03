@@ -1,17 +1,17 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import Logo from "../../Reusables/Logo/Logo";
 import products from "../../../data/products.json";
 
 const Footer = () => {
+    const router = useRouter();
     return (
         <footer className="footer">
             <div className="container">
                 <div className="wrapper">
                     <div className="footer__up">
                         <div className="footer__description">
-                            {/* <Link href="/"> */}
-                            <Logo inverted />
-                            {/* </Link> */}
+                            <Logo inverted onClick={() => router.push("/")} />
                             <p>
                                 YashCan Incorporated is carving a niche as a
                                 prominent Importer, Exporter and Trader to

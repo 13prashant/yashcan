@@ -16,9 +16,7 @@ const Navbar = () => {
         <header>
             <div className="container">
                 <nav className="navbar">
-                    {/* <Link href="/"> */}
-                    <Logo />
-                    {/* </Link> */}
+                    <Logo onClick={() => router.push("/")} />
                     <ul
                         className={isMenuVisible ? "" : "inactive"}
                         style={{ display: "flex" }}

@@ -1,8 +1,11 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import Button from "../../components/Reusables/Button/Button";
 import products from "../../data/products.json";
 
 const Product = ({ product }) => {
+    const router = useRouter();
+
     const getDescription = () => {
         let res = [];
         for (let key in product.description) {
@@ -28,9 +31,9 @@ const Product = ({ product }) => {
                                 </div>
                             ))}
                         </div>
-                        {/* <Link href="/"> */}
-                        <Button>Make an inquiry</Button>
-                        {/* </Link> */}
+                        <Button onClick={() => router.push("/contact-us")}>
+                            Make an inquiry
+                        </Button>
                     </div>
                 </div>
             </div>

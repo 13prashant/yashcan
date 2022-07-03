@@ -1,6 +1,7 @@
-const Logo = ({ inverted }) => {
+const Logo = ({ inverted, ...rest }) => {
     const logoStyle = {
         display: "flex",
+        cursor: "pointer",
     };
     const yashStyle = {
         color: "#ffffff",
@@ -12,7 +13,7 @@ const Logo = ({ inverted }) => {
     };
 
     return (
-        <div style={logoStyle}>
+        <div style={logoStyle} {...rest}>
             <h2 style={yashStyle}>Yash</h2>
             <h2 style={canStyle}>Can</h2>
         </div>

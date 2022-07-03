@@ -12,6 +12,8 @@
 @import "../components/Home/OurBusiness/ourBusiness";
 // ContactUs
 @import "../components/ContactUs/ContactDetails/contactDetails";
+// Products
+@import "../components/Products/ProductCard/productCard";
 
 html,
 body {
@@ -86,6 +88,7 @@ p {
     gap: 1rem;
     background-color: $color-bg-secondary;
     padding: 2rem;
+    box-shadow: $shadow;
 
     img {
         width: 100px;
@@ -100,6 +103,13 @@ p {
 }
 .card:nth-child(2n) {
     flex-direction: row-reverse;
+}
+
+.products__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    place-items: center;
 }
 
 @media screen and (min-width: 540px) {

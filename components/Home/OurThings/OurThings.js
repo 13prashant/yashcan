@@ -1,6 +1,6 @@
 const OurThings = () => {
     return (
-        <div className="main s1">
+        <div className="s1">
             <div className="container">
                 <div className="ourThings__wrapper wrapper grid">
                     <div className="ourThings__left">

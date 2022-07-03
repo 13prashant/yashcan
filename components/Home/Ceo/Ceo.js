@@ -2,7 +2,7 @@ import React from "react";
 
 const Ceo = () => {
     return (
-        <div className="main s1">
+        <div className="s1">
             <div className="container">
                 <div className="ceo__wrapper wrapper grid">
                     <div className="ceo__image">

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "../../Reusables/Logo/Logo";
+import products from "../../../data/products.json";
 
 const Footer = () => {
     return (
@@ -40,14 +41,15 @@ const Footer = () => {
                         <div className="footer_products">
                             <h4>Products</h4>
                             <ul>
-                                <li>
-                                    <Link href="/products/logs">Logs</Link>
-                                </li>
-                                <li>
-                                    <Link href="/products/occ">
-                                        OCC Waste Paper
-                                    </Link>
-                                </li>
+                                {products.map((product) => (
+                                    <li>
+                                        <Link
+                                            href={`/products/${product.slug}`}
+                                        >
+                                            {product.name}
+                                        </Link>
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </div>

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "OCC 11/12 Waste Paper",
+        "image": "/images/products/occ.jpg",
+        "slug": "occ",
+        "description": {
+            "type": "OCC11 / OCC12"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Yellow Southern Pine Logs",
+        "image": "/images/products/logs.jpg",
+        "slug": "yellow-southern-pine-logs",
+        "description": {
+            "type": "Pine",
+            "length": "18 to 25 feet",
+            "diameter": "8 to 12.5 inches",
+            "color": "Yellow"
+        }
+    }
+]

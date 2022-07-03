@@ -1,0 +1,14 @@
+.productCard {
+    max-width: 20rem;
+    background-color: $color-bg-primary;
+    cursor: pointer;
+    box-shadow: $shadow;
+
+    &__details {
+        padding: 1rem;
+
+        a {
+            color: $color-text-light;
+        }
+    }
+}

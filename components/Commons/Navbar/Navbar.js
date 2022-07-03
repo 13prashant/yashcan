@@ -6,7 +6,6 @@ import Logo from "../../Reusables/Logo/Logo";
 const Navbar = () => {
     const router = useRouter();
     const isPathHome = router.pathname === "/";
-    const isPathOurBusiness = router.pathname === "/our-business";
     const isPathProducts = router.pathname === "/products";
     const isPathContactUs = router.pathname === "/contact-us";
 
@@ -16,7 +15,9 @@ const Navbar = () => {
         <header>
             <div className="container">
                 <nav className="navbar">
-                    <Logo />
+                    <Link href="/" passHref>
+                        <Logo />
+                    </Link>
                     <ul style={{ display: isMenuVisible ? "flex" : "none" }}>
                         <li
                             className={`navbar__link ${
@@ -24,13 +25,6 @@ const Navbar = () => {
                             }`}
                         >
                             <Link href="/">Home</Link>
-                        </li>
-                        <li
-                            className={`navbar__link ${
-                                isPathOurBusiness ? "active" : ""
-                            }`}
-                        >
-                            <Link href="/our-business">Our Business</Link>
                         </li>
                         <li
                             className={`navbar__link ${

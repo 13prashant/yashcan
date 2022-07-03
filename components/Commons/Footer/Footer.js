@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="wrapper">
                     <div className="footer__up">
                         <div className="footer__description">
-                            <Link href="/">
+                            <Link href="/" passHref>
                                 <Logo inverted />
                             </Link>
                             <p>
@@ -24,11 +24,6 @@ const Footer = () => {
                             <ul>
                                 <li>
                                     <Link href="/">Home</Link>
-                                </li>
-                                <li>
-                                    <Link href="/our-business">
-                                        Our Business
-                                    </Link>
                                 </li>
                                 <li>
                                     <Link href="/products">Products</Link>

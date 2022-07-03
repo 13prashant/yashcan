@@ -1,7 +1,8 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
 import Button from "../../Reusables/Button/Button";
 
 const Main = () => {
+    const router = useRouter();
     return (
         <div className="main s2">
             <div className="container">
@@ -14,9 +15,9 @@ const Main = () => {
                             Efficiently transporting bulk commodities and
                             finished products across continents.
                         </h2>
-                        {/* <Link href="/"> */}
-                        <Button>Learn More</Button>
-                        {/* </Link> */}
+                        <Button onClick={() => router.push("/#our-business")}>
+                            Learn More
+                        </Button>
                     </div>
                 </div>
             </div>

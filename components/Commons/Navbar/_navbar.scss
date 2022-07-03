@@ -27,7 +27,7 @@ header {
         transition: $transition;
 
         .active-link {
-            text-decoration: underline;
+            border-bottom: 3px solid $color-accent;
         }
     }
 

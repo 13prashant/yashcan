@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Logo from "../../Reusables/Logo/Logo";
+import { getCurrentYear } from "../../../utils/getCurrentYear";
 import products from "../../../data/products.json";
 
 const Footer = () => {
@@ -53,13 +54,13 @@ const Footer = () => {
                             <Link href="/privacy-policy">Privacy Policy</Link>
                         </h4>
                         <h4>
-                            <Link href="/terms-&-conditions">
+                            <Link href="/terms-and-conditions">
                                 Terms & Conditions
                             </Link>
                         </h4>
                     </div>
                     <div className="footer__down">
-                        <h4>2021 &#169; YashCan</h4>
+                        <h4>{getCurrentYear()} &#169; YashCan</h4>
                     </div>
                 </div>
             </div>

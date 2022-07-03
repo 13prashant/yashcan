@@ -124,8 +124,10 @@ p {
             display: flex;
             align-items: center;
             h5 {
+                width: 20%;
                 margin-right: 2rem;
                 color: $color-text-light;
+                text-transform: capitalize;
             }
             p {
                 margin: 0;

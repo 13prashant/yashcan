@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Logo = ({ inverted, ...rest }) => {
     const logoStyle = {
         display: "flex",
@@ -19,5 +21,11 @@ const Logo = ({ inverted, ...rest }) => {
         </div>
     );
 };
+
+Logo.propTypes = {
+    inverted: PropTypes.bool,
+};
+
+Logo.defaultProps = { inverted: false };
 
 export default Logo;

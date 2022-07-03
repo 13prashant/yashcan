@@ -1,6 +1,6 @@
 const OurBusiness = () => {
     return (
-        <div className="s2">
+        <div id="our-business" className="s2">
             <div className="container">
                 <div className="ourBusiness__wrapper wrapper grid">
                     <div className="ourBusiness__content">

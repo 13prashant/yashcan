@@ -19,7 +19,7 @@ const Ceo = () => {
                             exporter and Trader of variety of products.
                         </p>
                         <div className="ceo__author">
-                            <img src="/images/shipsTop.jpg" alt="" />
+                            <img src="/images/ceo.jpg" alt="" />
                             <div>
                                 <h4>Yasmin Patel</h4>
                                 <h5>CEO, YashCan</h5>

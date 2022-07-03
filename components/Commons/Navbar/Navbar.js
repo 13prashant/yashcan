@@ -22,6 +22,7 @@ const Navbar = () => {
                         style={{ display: "flex" }}
                     >
                         <li
+                            onClick={() => setIsMenuVisible(false)}
                             className={`navbar__link ${
                                 isPathHome ? "active-link" : ""
                             }`}
@@ -29,6 +30,7 @@ const Navbar = () => {
                             <Link href="/">Home</Link>
                         </li>
                         <li
+                            onClick={() => setIsMenuVisible(false)}
                             className={`navbar__link ${
                                 isPathProducts ? "active-link" : ""
                             }`}
@@ -36,6 +38,7 @@ const Navbar = () => {
                             <Link href="/products">Products</Link>
                         </li>
                         <li
+                            onClick={() => setIsMenuVisible(false)}
                             className={`navbar__link ${
                                 isPathContactUs ? "active-link" : ""
                             }`}

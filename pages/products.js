@@ -6,6 +6,7 @@ const Products = () => {
         <div className="main s2">
             <div className="container">
                 <div className="products__wrapper wrapper">
+                    <h1>Products</h1>
                     {products.map(({ name, image, description, slug }) => (
                         <ProductCard
                             key={name}

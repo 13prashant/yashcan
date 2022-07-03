@@ -19,15 +19,11 @@ header {
         width: 70vw;
         background-color: hsl(0, 0, 255, 0.5);
         backdrop-filter: blur(2rem);
-        padding: calc(2.5% + 2rem);
         flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        gap: 4rem;
+        padding: 10rem 3rem;
+        gap: 3rem;
         transition: $transition;
         list-style: none;
-        margin: 0;
-        padding: 0;
 
         .active-link {
             border-bottom: 3px solid $color-accent;
@@ -36,6 +32,7 @@ header {
 
     &__hamburger {
         z-index: 99;
+        cursor: pointer;
         span {
             width: 1.9rem;
             height: 0.2rem;

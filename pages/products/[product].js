@@ -18,7 +18,7 @@ const Product = ({ product }) => {
             <div className="container">
                 <div className="product__wrapper wrapper grid">
                     <div className="product__img">
-                        <img src="/images/products/logs.jpg" alt="" />
+                        <img src={product.image} alt="" />
                     </div>
                     <div className="product__content">
                         <h2>{product.name}</h2>

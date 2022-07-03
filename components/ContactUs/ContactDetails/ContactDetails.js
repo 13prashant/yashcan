@@ -10,19 +10,19 @@ const ContactDetails = () => {
                         <div className="contactDetails__card card">
                             <img src="/images/call.svg" alt="" />
                             <div>
-                                <h4>Phone Number</h4>
-                                <h5>
+                                <h5>Phone Number</h5>
+                                <h4>
                                     <a href={`tel:${MOBILE}`}>{MOBILE}</a>
-                                </h5>
+                                </h4>
                             </div>
                         </div>
                         <div className="contactDetails__card card">
                             <img src="/images/email.svg" alt="" />
                             <div>
-                                <h4>Email Address</h4>
-                                <h5>
+                                <h5>Email Address</h5>
+                                <h4>
                                     <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
-                                </h5>
+                                </h4>
                             </div>
                         </div>
                     </div>

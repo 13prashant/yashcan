@@ -8,6 +8,7 @@ const Products = () => {
                 <div className="products__wrapper wrapper">
                     {products.map(({ name, image, description, slug }) => (
                         <ProductCard
+                            key={name}
                             name={name}
                             image={image}
                             description={description}

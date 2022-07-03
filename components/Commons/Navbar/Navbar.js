@@ -5,9 +5,10 @@ import Logo from "../../Reusables/Logo/Logo";
 
 const Navbar = () => {
     const router = useRouter();
-    const isPathHome = router.pathname === "/";
-    const isPathProducts = router.pathname === "/products";
-    const isPathContactUs = router.pathname === "/contact-us";
+    const path = router.pathname.split("/")[1];
+    const isPathHome = path === "";
+    const isPathProducts = path === "products";
+    const isPathContactUs = path === "contact-us";
 
     const [isMenuVisible, setIsMenuVisible] = useState(false);
 
@@ -15,27 +16,30 @@ const Navbar = () => {
         <header>
             <div className="container">
                 <nav className="navbar">
-                    <Link href="/" passHref>
-                        <Logo />
-                    </Link>
-                    <ul style={{ display: isMenuVisible ? "flex" : "none" }}>
+                    {/* <Link href="/"> */}
+                    <Logo />
+                    {/* </Link> */}
+                    <ul
+                        className={isMenuVisible ? "" : "inactive"}
+                        style={{ display: "flex" }}
+                    >
                         <li
                             className={`navbar__link ${
-                                isPathHome ? "active" : ""
+                                isPathHome ? "active-link" : ""
                             }`}
                         >
                             <Link href="/">Home</Link>
                         </li>
                         <li
                             className={`navbar__link ${
-                                isPathProducts ? "active" : ""
+                                isPathProducts ? "active-link" : ""
                             }`}
                         >
                             <Link href="/products">Products</Link>
                         </li>
                         <li
                             className={`navbar__link ${
-                                isPathContactUs ? "active" : ""
+                                isPathContactUs ? "active-link" : ""
                             }`}
                         >
                             <Link href="/contact-us">Contact Us</Link>

@@ -14,9 +14,9 @@ const Main = () => {
                             Efficiently transporting bulk commodities and
                             finished products across continents.
                         </h2>
-                        <Link href="/">
-                            <Button>Learn More</Button>
-                        </Link>
+                        {/* <Link href="/"> */}
+                        <Button>Learn More</Button>
+                        {/* </Link> */}
                     </div>
                 </div>
             </div>

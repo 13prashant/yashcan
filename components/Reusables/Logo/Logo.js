@@ -1,6 +1,5 @@
-import React from "react";
-
-const Logo = React.forwardRef(({ href, inverted }, ref) => {
+const Logo = ({ inverted }) => {
+    console.log(inverted);
     const logoStyle = {
         display: "flex",
     };
@@ -14,13 +13,11 @@ const Logo = React.forwardRef(({ href, inverted }, ref) => {
     };
 
     return (
-        <a href={href} ref={ref}>
-            <div style={logoStyle}>
-                <h2 style={yashStyle}>Yash</h2>
-                <h2 style={canStyle}>Can</h2>
-            </div>
-        </a>
+        <div style={logoStyle}>
+            <h2 style={yashStyle}>Yash</h2>
+            <h2 style={canStyle}>Can</h2>
+        </div>
     );
-});
+};
 
 export default Logo;

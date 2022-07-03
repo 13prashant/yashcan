@@ -17,12 +17,18 @@ header {
         right: 0;
         height: 100vh;
         width: 70vw;
-        background-color: $color-bg-primary;
+        background-color: hsl(0, 0, 255, 0.5);
+        backdrop-filter: blur(2rem);
         padding: calc(2.5% + 2rem);
         flex-direction: column;
         align-items: flex-end;
         justify-content: center;
         gap: 4rem;
+        transition: $transition;
+
+        .active-link {
+            text-decoration: underline;
+        }
     }
 
     &__hamburger {
@@ -37,6 +43,10 @@ header {
             margin-bottom: 0.3rem;
         }
     }
+}
+
+.inactive {
+    transform: translateX(100%);
 }
 
 @media screen and (min-width: 700px) {
@@ -55,5 +65,8 @@ header {
     }
     .navbar__hamburger {
         display: none;
+    }
+    .inactive {
+        transform: translateX(0);
     }
 }

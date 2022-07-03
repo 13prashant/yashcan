@@ -9,9 +9,9 @@ const Footer = () => {
                 <div className="wrapper">
                     <div className="footer__up">
                         <div className="footer__description">
-                            <Link href="/" passHref>
-                                <Logo inverted />
-                            </Link>
+                            {/* <Link href="/"> */}
+                            <Logo inverted />
+                            {/* </Link> */}
                             <p>
                                 YashCan Incorporated is carving a niche as a
                                 prominent Importer, Exporter and Trader to
@@ -37,7 +37,7 @@ const Footer = () => {
                             <h4>Products</h4>
                             <ul>
                                 {products.map((product) => (
-                                    <li>
+                                    <li key={product.id}>
                                         <Link
                                             href={`/products/${product.slug}`}
                                         >

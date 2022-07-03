@@ -14,6 +14,8 @@
 @import "../components/ContactUs/ContactDetails/contactDetails";
 // Products
 @import "../components/Products/ProductCard/productCard";
+// Reusables
+@import "../components/Reusables/Button/button";
 
 html,
 body {
@@ -110,6 +112,26 @@ p {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
     place-items: center;
+}
+
+.product__content {
+    .product__details {
+        padding: 1rem;
+        box-shadow: $shadow;
+        margin: 2rem 0;
+
+        .product__row {
+            display: flex;
+            align-items: center;
+            h5 {
+                margin-right: 2rem;
+                color: $color-text-light;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 540px) {

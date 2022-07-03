@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Button from "../../Reusables/Button/Button";
 
 const Main = () => {
     return (
@@ -14,7 +15,7 @@ const Main = () => {
                             finished products across continents.
                         </h2>
                         <Link href="/">
-                            <button>Learn More</button>
+                            <Button>Learn More</Button>
                         </Link>
                     </div>
                 </div>

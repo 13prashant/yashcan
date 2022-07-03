@@ -1,5 +1,4 @@
 const Logo = ({ inverted }) => {
-    console.log(inverted);
     const logoStyle = {
         display: "flex",
     };

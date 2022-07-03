@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { EMAIL, MOBILE } from "../../../utils/constants";
 
 const ContactDetails = () => {
     return (
@@ -11,7 +12,7 @@ const ContactDetails = () => {
                             <div>
                                 <h4>Phone Number</h4>
                                 <h5>
-                                    <a href="tel:+16475104224">+16475104224</a>
+                                    <a href={`tel:${MOBILE}`}>{MOBILE}</a>
                                 </h5>
                             </div>
                         </div>
@@ -20,9 +21,7 @@ const ContactDetails = () => {
                             <div>
                                 <h4>Email Address</h4>
                                 <h5>
-                                    <a href="mailto:info@yashcan.com">
-                                        info@yashcan.com
-                                    </a>
+                                    <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
                                 </h5>
                             </div>
                         </div>

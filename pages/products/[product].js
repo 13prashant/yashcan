@@ -4,12 +4,11 @@ import products from "../../data/products.json";
 
 const Product = ({ product }) => {
     const getDescription = () => {
+        let res = [];
         for (let key in product.description) {
-            <div className="product__row">
-                <h5>{key}</h5>
-                <p>{product.description[key]}</p>
-            </div>;
+            res.push([key, product.description[key]]);
         }
+        return res;
     };
 
     return (
@@ -22,21 +21,12 @@ const Product = ({ product }) => {
                     <div className="product__content">
                         <h2>{product.name}</h2>
                         <div className="product__details">
-                            {getDescription()}
-                            {/* <div className="product__row">
-                                <h5>Type</h5>
-                                <p>OCC11</p>
-                            </div>
-                            <hr />
-                            <div className="product__row">
-                                <h5>Color</h5>
-                                <p>Yellow</p>
-                            </div>
-                            <hr />
-                            <div className="product__row">
-                                <h5>Diameter</h5>
-                                <p>8 to 12.5 inches</p>
-                            </div> */}
+                            {getDescription().map((desc) => (
+                                <div key={desc[0]} className="product__row">
+                                    <h5>{desc[0]}</h5>
+                                    <p>{desc[1]}</p>
+                                </div>
+                            ))}
                         </div>
                         {/* <Link href="/"> */}
                         <Button>Make an inquiry</Button>

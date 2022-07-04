@@ -9,9 +9,19 @@
     flex-direction: row !important;
     align-items: center;
     img {
-        margin-right: 3rem !important;
+        width: 4rem !important;
+        margin-right: 2rem !important;
     }
     h4 {
         margin-top: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .contactDetails__card {
+        img {
+            width: 8rem !important;
+            margin-right: 3rem !important;
+        }
     }
 }

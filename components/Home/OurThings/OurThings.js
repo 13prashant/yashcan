@@ -61,8 +61,8 @@ const OurThings = () => {
                                     We at YashCan Incorporated are committed to
                                     building strong communities and acting in
                                     environmentally friendly way. YashCan
-                                    Incorporated has 'Environmental
-                                    Sustainability' as a core value.
+                                    Incorporated has Environmental
+                                    Sustainability as a core value.
                                 </p>
                             </div>
                         </div>

@@ -61,6 +61,12 @@ const Footer = () => {
                     </div>
                     <div className="footer__down">
                         <h4>{getCurrentYear()} &#169; YashCan</h4>
+                        <p>
+                            Made with &#9829; by{" "}
+                            <a href="http://www.prashaant.in/" target="_blank">
+                                Prashant
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>

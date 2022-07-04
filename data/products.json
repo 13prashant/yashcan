@@ -19,5 +19,16 @@
             "diameter": "8 to 12.5 inches",
             "color": "Yellow"
         }
+    },
+    {
+        "id": 3,
+        "name": "Used Oil",
+        "image": "/images/products/oil.jpg",
+        "slug": "used-oil",
+        "description": {
+            "type": "Used",
+            "varities": "Engine oil, Marine fuel oil, Slop oil"
+        },
+        "excerpt": "We are buying Engine oil, Marine fuel oil, Slop oil, etc from refineries, and selling to partner refineries. As of today, we have moved 10000MT oil."
     }
 ]

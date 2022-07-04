@@ -30,6 +30,7 @@ const Product = ({ product }) => {
                                 </div>
                             ))}
                         </div>
+                        <p>{product.excerpt}</p>
                         <Button onClick={() => router.push("/contact-us")}>
                             Make an inquiry
                         </Button>

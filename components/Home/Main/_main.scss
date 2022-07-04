@@ -2,6 +2,7 @@
 }
 
 .main__content {
+    text-align: center;
     h4 {
         color: $color-text-light;
     }
@@ -13,5 +14,8 @@
 .main__image {
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 596px) {
+    .main__content {
+        text-align: left;
+    }
 }

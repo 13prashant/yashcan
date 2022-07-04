@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { EMAIL, MOBILE } from "../../../utils/constants";
 
 const ContactDetails = () => {

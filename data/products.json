@@ -1,23 +1,23 @@
 [
     {
         "id": 1,
-        "name": "OCC 11/12 Waste Paper",
+        "name": "Waste Paper",
         "image": "/images/products/occ.jpg",
         "slug": "occ",
         "description": {
-            "type": "OCC11 / OCC12"
-        }
+            "type": "OCC11 / OCC12, Soft-mix Paper, Hard-mix Paper, ONP, ONIP"
+        },
+        "excerpt": "We are able to supply 3000 MT of papers per month on regular base in both FAS & CNF."
     },
     {
         "id": 2,
-        "name": "Yellow Southern Pine Logs",
-        "image": "/images/products/logs.jpg",
+        "name": "Wood Sawn Timber",
+        "image": "/images/products/timber.jpg",
         "slug": "yellow-southern-pine-logs",
         "description": {
-            "type": "Pine",
-            "length": "18 to 25 feet",
-            "diameter": "8 to 12.5 inches",
-            "color": "Yellow"
+            "material": "Wood",
+            "length": "As per customer need",
+            "color": "Brown"
         }
     },
     {
@@ -30,5 +30,15 @@
             "varities": "Engine oil, Marine fuel oil, Slop oil"
         },
         "excerpt": "We are buying Engine oil, Marine fuel oil, Slop oil, etc from refineries, and selling to partner refineries. As of today, we have moved 10000MT oil."
+    },
+    {
+        "id": 4,
+        "name": "Minerals",
+        "image": "/images/products/minerals.jpg",
+        "slug": "minerals",
+        "description": {
+            "varities": "Coal, Nickle, Iron Ore, Copper, Alluminium, Potash, Zinc"
+        },
+        "excerpt": "We work directly with mining companies, producers, end sellers & end buyers. We have extensive experience of trading minerals."
     }
 ]

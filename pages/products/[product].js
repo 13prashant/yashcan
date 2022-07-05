@@ -14,7 +14,7 @@ const Product = ({ product }) => {
     };
 
     return (
-        <div className="main s2">
+        <div className="s2">
             <div className="container">
                 <div className="product__wrapper wrapper grid">
                     <div className="product__img">

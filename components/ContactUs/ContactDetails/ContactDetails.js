@@ -3,7 +3,7 @@ import ContactForm from "../ContactForm/ContactForm";
 
 const ContactDetails = () => {
     return (
-        <div className="main s2">
+        <div className="s2">
             <div className="container">
                 <div className="contactDetails__wrapper wrapper grid">
                     <div className="contactDetails__content">

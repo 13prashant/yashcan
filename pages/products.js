@@ -3,7 +3,7 @@ import products from "../utils/products.json";
 
 const Products = () => {
     return (
-        <div className="main s2">
+        <div className="s2">
             <div className="container">
                 <div className="products__wrapper wrapper">
                     <h1>Products</h1>

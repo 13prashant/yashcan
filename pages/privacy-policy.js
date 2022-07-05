@@ -2,7 +2,7 @@ import React from "react";
 
 const PrivacyPolicy = () => {
     return (
-        <div className="main s2">
+        <div className="s2">
             <div className="container">
                 <div className="wrapper">
                     <h1>Privacy Policy for YashCan Incorporated</h1>

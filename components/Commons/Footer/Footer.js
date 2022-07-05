@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Logo from "../../Reusables/Logo/Logo";
 import { getCurrentYear } from "../../../utils/getCurrentYear";
-import products from "../../../data/products.json";
+import products from "../../../utils/products.json";
 
 const Footer = () => {
     const router = useRouter();
@@ -63,7 +63,11 @@ const Footer = () => {
                         <h4>{getCurrentYear()} &#169; YashCan</h4>
                         <p>
                             Made with &#9829; by{" "}
-                            <a href="http://www.prashaant.in/" target="_blank">
+                            <a
+                                href="http://www.prashaant.in/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 Prashant
                             </a>
                         </p>

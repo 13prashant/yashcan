@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Button from "../../components/Reusables/Button/Button";
-import products from "../../data/products.json";
+import products from "../../utils/products.json";
 
 const Product = ({ product }) => {
     const router = useRouter();

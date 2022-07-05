@@ -3,6 +3,7 @@
     background-color: $color-bg-primary;
     cursor: pointer;
     box-shadow: $shadow;
+    transition: $transition;
 
     &__details {
         padding: 1rem;

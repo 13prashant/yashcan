@@ -1,4 +1,5 @@
 import { EMAIL, MOBILE } from "../../../utils/constants";
+import ContactForm from "../ContactForm/ContactForm";
 
 const ContactDetails = () => {
     return (
@@ -6,6 +7,11 @@ const ContactDetails = () => {
             <div className="container">
                 <div className="contactDetails__wrapper wrapper grid">
                     <div className="contactDetails__content">
+                        <h4 className="heading">Contact Us</h4>
+                        <h1>
+                            Leave your message here. We will reaach out you
+                            soon.
+                        </h1>
                         <div className="contactDetails__card card">
                             <img src="/images/call.svg" alt="" />
                             <div>
@@ -25,9 +31,7 @@ const ContactDetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="contactDetails__img">
-                        <img src="/images/trucksTop.jpg" alt="" />
-                    </div>
+                    <ContactForm />
                 </div>
             </div>
         </div>

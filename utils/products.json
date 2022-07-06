@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Waste Paper",
         "image": "/images/products/occ.jpg",
-        "slug": "occ",
+        "slug": "waste-paper",
         "description": {
             "type": "OCC11 / OCC12, Soft-mix Paper, Hard-mix Paper, ONP, ONIP"
         },
@@ -13,7 +13,7 @@
         "id": 2,
         "name": "Wood Sawn Timber",
         "image": "/images/products/timber.jpg",
-        "slug": "yellow-southern-pine-logs",
+        "slug": "wood-sawn-timber",
         "description": {
             "material": "Wood",
             "length": "As per customer need",

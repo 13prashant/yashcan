@@ -6,16 +6,18 @@ const Products = () => {
         <div className="s2">
             <div className="container">
                 <div className="products__wrapper wrapper">
-                    <h1>Products</h1>
-                    {products.map(({ name, image, description, slug }) => (
-                        <ProductCard
-                            key={name}
-                            name={name}
-                            image={image}
-                            description={description}
-                            slug={slug}
-                        />
-                    ))}
+                    <h1 className="heading">Products</h1>
+                    <div className="products__cards">
+                        {products.map(({ name, image, description, slug }) => (
+                            <ProductCard
+                                key={name}
+                                name={name}
+                                image={image}
+                                description={description}
+                                slug={slug}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

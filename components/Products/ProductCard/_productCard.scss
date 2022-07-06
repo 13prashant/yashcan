@@ -1,13 +1,19 @@
 .productCard {
+    width: 20rem;
     max-width: 20rem;
+    height: 18rem;
     background-color: $color-bg-primary;
     cursor: pointer;
     box-shadow: $shadow;
     transition: $transition;
 
-    &__details {
-        padding: 1rem;
+    img {
+        height: 70%;
+        object-fit: cover;
+    }
 
+    &__details {
+        padding: 0.5rem 0 0 1rem;
         a {
             color: $color-text-light;
         }

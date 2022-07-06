@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const ProductCard = ({ image, name, description, slug }) => {
+const ProductCard = ({ image, name, slug }) => {
     return (
         <Link href={`/products/${slug}`}>
             <div className="productCard">

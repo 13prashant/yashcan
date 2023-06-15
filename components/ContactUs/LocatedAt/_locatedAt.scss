@@ -1,0 +1,18 @@
+.locatedAt__maps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.locatedAt__card {
+    flex: 1;
+}
+.locatedAt__card:hover {
+    transform: unset !important;
+}
+
+@media screen and (min-width: 540px) {
+    .locatedAt__maps {
+        flex-direction: row;
+    }
+}

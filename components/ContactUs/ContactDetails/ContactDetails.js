@@ -12,7 +12,7 @@ const ContactDetails = () => {
                             Leave your message here. We will reaach out you
                             soon.
                         </h1>
-                        <div className="contactDetails__card card">
+                        {/* <div className="contactDetails__card card">
                             <img src="/images/call.svg" alt="" />
                             <div>
                                 <h5>Phone Number</h5>
@@ -20,7 +20,7 @@ const ContactDetails = () => {
                                     <a href={`tel:${MOBILE}`}>{MOBILE}</a>
                                 </h4>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="contactDetails__card card">
                             <img src="/images/email.svg" alt="" />
                             <div>

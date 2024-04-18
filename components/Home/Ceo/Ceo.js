@@ -18,13 +18,13 @@ const Ceo = () => {
                             We are carving a niche as a prominent importer,
                             exporter and Trader of variety of products.
                         </p>
-                        <div className="ceo__author">
+                        {/* <div className="ceo__author">
                             <img src="/images/ceo.jpg" alt="" />
                             <div>
                                 <h4>Yasmin Patel</h4>
                                 <h5>CEO, YashCan</h5>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

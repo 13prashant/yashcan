@@ -40,5 +40,15 @@
             "varities": "Coal, Nickle, Iron Ore, Copper, Alluminium, Potash, Zinc"
         },
         "excerpt": "We work directly with mining companies, producers, end sellers & end buyers. We have extensive experience of trading minerals."
+    },
+    {
+        "id": 5,
+        "name": "Used Tyres",
+        "image": "/images/products/used-tyres.jpg",
+        "slug": "used-tyres",
+        "description": {
+            "varities": "Passenger car tyres, Truck tyres, OTR (Off-The-Road) tyres"
+        },
+        "excerpt": "We source and supply used tyres, offering a wide range of grades to meet diverse needs, from remanufactured tyres to partially worn options. Our extensive network allows us to cater to both domestic and international markets."
     }
 ]

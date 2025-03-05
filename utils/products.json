@@ -1,5 +1,15 @@
 [
     {
+        "id": 0,
+        "name": "Plastic Grades",
+        "image": "/images/products/plastic-grades.webp",
+        "slug": "plastic-grades",
+        "description": {
+            "varities": "HDPE (High-Density Polyethylene), LDPE (Low-Density Polyethylene), PP (Polypropylene), PET (Polyethylene Terephthalate)"
+        },
+        "excerpt": "We source and supply premium plastic grades, catering to the recycling and manufacturing industries. Our extensive inventory ensures a reliable supply for various applications, including packaging, automotive, consumer goods, and industrial uses."
+    },
+    {
         "id": 1,
         "name": "Waste Paper",
         "image": "/images/products/occ.jpg",
@@ -40,15 +50,5 @@
             "varities": "Coal, Nickle, Iron Ore, Copper, Alluminium, Potash, Zinc"
         },
         "excerpt": "We work directly with mining companies, producers, end sellers & end buyers. We have extensive experience of trading minerals."
-    },
-    {
-        "id": 5,
-        "name": "Used Tyres",
-        "image": "/images/products/used-tyres.jpg",
-        "slug": "used-tyres",
-        "description": {
-            "varities": "Passenger car tyres, Truck tyres, OTR (Off-The-Road) tyres"
-        },
-        "excerpt": "We source and supply used tyres, offering a wide range of grades to meet diverse needs, from remanufactured tyres to partially worn options. Our extensive network allows us to cater to both domestic and international markets."
     }
 ]

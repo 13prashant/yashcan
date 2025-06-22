@@ -1,6 +1,6 @@
 import { EMAIL, EMAIL_RESPONSE, WEB_URL } from "../../../utils/constants";
 
-const ContactForm = () => {
+const ContactForm = ({ productTitle }) => {
     return (
         <form
             className="contactForm card"
@@ -13,7 +13,12 @@ const ContactForm = () => {
             </label>
             <label>
                 <span>Product you want to enquire about</span>
-                <input type="text" name="product" required />
+                <input
+                    type="text"
+                    name="product"
+                    defaultValue={productTitle}
+                    required
+                />
             </label>
             <label>
                 <span>Your Message</span>

@@ -1,7 +1,7 @@
 import { EMAIL, MOBILE } from "../../../utils/constants";
 import ContactForm from "../ContactForm/ContactForm";
 
-const ContactDetails = () => {
+const ContactDetails = ({ productTitle }) => {
     return (
         <div className="s2">
             <div className="container">
@@ -22,7 +22,7 @@ const ContactDetails = () => {
                             </div>
                         </div> */}
                         <div className="contactDetails__card card">
-                            <img src="/images/email.svg" alt="" />
+                            <img src="/images/email.svg" alt="Email" />
                             <div>
                                 <h5>Email Address</h5>
                                 <h4>
@@ -31,7 +31,7 @@ const ContactDetails = () => {
                             </div>
                         </div>
                     </div>
-                    <ContactForm />
+                    <ContactForm productTitle={productTitle} />
                 </div>
             </div>
         </div>

@@ -18,7 +18,7 @@ const Product = ({ product }) => {
             <div className="container">
                 <div className="product__wrapper wrapper grid">
                     <div className="product__img">
-                        <img src={product.image} alt="" />
+                        <img src={product.image} alt={product.name} />
                     </div>
                     <div className="product__content">
                         <h2>{product.name}</h2>
@@ -31,7 +31,13 @@ const Product = ({ product }) => {
                             ))}
                         </div>
                         <p>{product.excerpt}</p>
-                        <Button onClick={() => router.push("/contact-us")}>
+                        <Button
+                            onClick={() =>
+                                router.push(
+                                    "/contact-us?product=" + product.slug
+                                )
+                            }
+                        >
                             Make an inquiry
                         </Button>
                     </div>

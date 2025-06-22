@@ -1,20 +1,48 @@
 import Confetti from "react-confetti";
 import useWindowSize from "../../../hooks/useWindowSize";
 import * as Dialog from "@radix-ui/react-dialog";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const WeAreExpanding = () => {
-    const [open, setOpen] = useState(true);
     const { windowSize } = useWindowSize();
+
+    const [open, setOpen] = useState(false);
+
+    useEffect(() => {
+        // Check how many times the dialog has been shown from local storage
+        const shownCount = parseInt(
+            localStorage.getItem("yashcan_weAreExpandingCount") || "0"
+        );
+
+        if (shownCount >= 2) {
+            setOpen(false);
+            return;
+        }
+
+        const timeoutId = setTimeout(() => {
+            setOpen(true);
+            // Increment the count in local storage after showing the dialog
+            localStorage.setItem(
+                "yashcan_weAreExpandingCount",
+                (shownCount + 1).toString()
+            );
+        }, 1500); // Show the dialog after 1.5 seconds
+
+        return () => {
+            clearTimeout(timeoutId);
+        };
+    }, []);
 
     return (
         <>
-            <Confetti
-                className="w-full h-full"
-                recycle={false}
-                width={windowSize.width}
-                height={windowSize.height}
-            />
+            {open && (
+                <Confetti
+                    className="w-full h-full"
+                    recycle={false}
+                    width={windowSize.width}
+                    height={windowSize.height}
+                />
+            )}
             <Dialog.Root open={open} onOpenChange={setOpen}>
                 <Dialog.Content className="weAreExpanding">
                     <div className="weAreExpanding__content">
